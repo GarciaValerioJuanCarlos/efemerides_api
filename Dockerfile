@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Exponemos el puerto por el cual accederemos desde DOCKER, EXTERNO:INTERNO_DOCKER
-EXPOSE 8000
+EXPOSE 8080
 
 # Comando para ejecutar el proyecto
-CMD ["fastapi","dev", "main.py", "--host", "0.0.0.0","--port", "8000"]
+CMD ["fastapi","dev", "main.py", "--host", "0.0.0.0","--port", "8080"]
