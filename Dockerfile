@@ -1,5 +1,5 @@
 # Imagen sobre la que nos basaremos
-FROM python:3.8.19-alpine3.20
+FROM python:3.8.1-slim
 
 # Carpeta de trabajo dentro del contenedor
 WORKDIR /app
