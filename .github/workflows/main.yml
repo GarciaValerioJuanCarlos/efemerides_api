@@ -5,11 +5,11 @@ on:
     branches: [ "main" ] # Se dispara al hacer merge a main
 
 env:
-  PROJECT_ID: tu-id-de-proyecto-gcp
-  REGION: us-central1
-  SERVICE_NAME: mi-servicio-backend
-  GAR_LOCATION: us-central1 # Ubicación de Artifact Registry
-  REPOSITORY: mi-repo-docker # Nombre del repositorio en Artifact Registry
+  PROJECT_ID: ${{ vars.GCP_PROJECT_ID }}
+  REGION: ${{ vars.GCP_REGION }}
+  SERVICE_NAME: ${{ vars.SERVICE_NAME }}
+  GAR_LOCATION: ${{ vars.GCP_REGION }}
+  REPOSITORY: ${{ vars.GAR_REPO_NAME }}
   IMAGE_NAME: mi-app-backend
 
 jobs:
